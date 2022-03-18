@@ -1,0 +1,43 @@
+import { StyleSheet, Text, View ,Button,SafeAreaView, TouchableOpacity} from 'react-native'
+import React from 'react'
+//import LottieView from 'lottie-react-native';
+import { StatusBar } from 'expo-status-bar';
+
+const PaymentSucces = ({navigation}) => {
+  return (
+    <SafeAreaView>
+    <StatusBar
+   backgroundColor="#0225A1"
+   barStyle="light-content"
+   />
+<View style={styles.container}>
+   
+   
+  
+ </View>
+ <TouchableOpacity style={{ marginTop:250,justifyContent:'center',alignItems:'center',borderRadius:10,
+        marginLeft:160,backgroundColor:'#4A1DD6',width:80,height:30}} onPress={()=>navigation.navigate('HomeTap')}>
+       <Text style={{color:'#fff'}}>OK</Text>
+   </TouchableOpacity>
+                {/* <Button style={{width:100}}
+                       title='Add Card'
+                       onPress={()=>navigation.navigate('HomeTap')}/> */}
+</SafeAreaView>
+  )
+}
+
+export default PaymentSucces
+
+const styles = StyleSheet.create({
+    container: {
+        flex:1,
+        padding:80,
+        marginTop:100,
+        marginLeft:-150
+      },
+      hotel: {
+        width:300,
+        height:300,
+        
+      },
+})
